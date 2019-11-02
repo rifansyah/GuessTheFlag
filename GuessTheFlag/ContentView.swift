@@ -4,10 +4,10 @@ struct ContentView: View {
   private let endStage = 10
   
   @State private var flagImageNames = ["Estonia", "France", "Germany", "Ireland", "Italy", "Monaco", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
-  @State private var selectedFlag = Int.random(in: 0 ..< 3)
   @State private var stage = 1
-  @State private var showResult = false
   @State private var score = 0
+  @State private var selectedFlag = Int.random(in: 0 ..< 3)
+  @State private var showResult = false
   
   var selectedFlagText : String {
     return flagImageNames[selectedFlag]
